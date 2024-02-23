@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            
+            <div class="left1">
+                <div class="left2">
+                    <label for="apis"></label>
+                    <select name="api" id="api">
+                    <option value="get">GET</option>
+                    <option value="post">POST</option>
+                    <option value="del">DEL</option>
+                    <option value="put">PUT</option>
+                    </select>
+                    <input type="text" id="search" placeholder="Search"/> 
+                    <button id="send" onclick="clickHandler()">Send</button>
+                </div>
+                <div class="header-buttons">
+                  <button class="nav">Query</button>
+                  <button class="nav">Headers</button>
+                  <button class="nav">Auth</button>
+                  <button class="nav">Body</button>
+                  <button class="nav">Test</button>
+                  <button class="nav">Pre Run</button>
+              </div>     
+            </div>
+            <hr>
+            <div class="queryparam">
+                <h4 id="query">Query Parameters</h4> 
+                <input type="checkbox"  style color="#1E1E1E"id="first" > 
+                <input type="text" class="text-search" id="param"  placeholder="parameter">
+                <input type="text" class="text-search"  id="value" placeholder="value">
+            </div>
+            
+         
+        </div>
+        
+        <div class="rightcontainer">
+            <div class="right1">
+                <div class="rig">
+                    <h4>Status:</h4>
+
+                    <h4>Size:</h4>
+                    <h4>Time</h4>
+                </div>
+                
+                <div class="buttons">
+                    <span class="right-tab-button selected">Response</span>
+                    <span class="right-tab-button">Headers</span>
+                    <span class="right-tab-button">Cookies</span>
+                    <span class="right-tab-button">Result</span>
+                    <span class="right-tab-button">Docs</span>
+                </div>
+                <hr>
+                <input type="text"  id="result" >
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
